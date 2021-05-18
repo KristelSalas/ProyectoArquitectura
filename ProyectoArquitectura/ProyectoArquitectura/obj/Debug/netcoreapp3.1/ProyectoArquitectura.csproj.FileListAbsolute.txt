@@ -1,0 +1,16 @@
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.exe
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.deps.json
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.runtimeconfig.json
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.runtimeconfig.dev.json
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.dll
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\ProyectoArquitectura.pdb
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.csprojAssemblyReference.cache
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.AssemblyInfoInputs.cache
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.AssemblyInfo.cs
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.csproj.CoreCompileInputs.cache
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.dll
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.pdb
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.genruntimeconfig.cache
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\Kristel Salas\Documents\GitHub\ProyectoArquitectura\ProyectoArquitectura\ProyectoArquitectura\obj\Debug\netcoreapp3.1\ProyectoArquitectura.csproj.CopyComplete
