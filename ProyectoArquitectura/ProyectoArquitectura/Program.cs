@@ -12,28 +12,39 @@ namespace ProyectoArquitectura
         static void Main(string[] args)
         {
             Buscar meta = new Buscar();
-            //meta.BuscarMetacritic();
 
-            //meta.BuscarPrecio1();
-
-            meta.BuscarTiempo();
-
-            //string[] lines = File.ReadAllLines("Juegos.txt");//meter todo el archivo en un arreglo good good
-            /*var sw = Stopwatch.StartNew();//iniciar el reloj feo
-            Parallel.ForEach(lines, line => //el parallel foreach duh
-            {
-                meta.BuscarMetacritic(line);
-                //Console.WriteLine(line);//escribe cada linea
-            });
-            Console.WriteLine("Ciclo paralelo: " + sw.Elapsed.TotalSeconds);//da el tiempo*/
-
-
+            //string[] lines = File.ReadAllLines("Juegos.txt"); //meter todo el archivo en un arreglo good good
             /*foreach (string line in lines) 
             { 
-                meta.BuscarMetacritic(line); 
+                meta.BuscarMetacritic(line);
+                meta.BuscarPrecio1(line);
+                meta.BuscarPrecio2(line);
+                meta.BuscarTiempo(line);
             }*/
 
 
+
+            /*string[] lines = File.ReadAllLines("Juegos.txt");//meter todo el archivo en un arreglo good good
+            foreach (string line in lines) 
+            {
+                meta.BuscarMetacritic(line);
+                meta.BuscarPrecio1(line);
+                meta.BuscarTiempo(line);
+                /*Parallel.Invoke(
+                () =>
+                {
+                    meta.BuscarMetacritic(line);
+                },
+                () =>
+                {
+                    meta.BuscarPrecio1(line);
+                },
+                () =>
+                {
+                    meta.BuscarTiempo(line);
+                }
+                );
+            }*/
 
 
             /*Parallel.Invoke(
@@ -57,9 +68,9 @@ namespace ProyectoArquitectura
             //File.WriteAllText("PaginaWeb.html", html);
 
             //var proc = Process.Start(@"cmd.exe ", @"/c PaginaWeb.html");
-            
+
         }
-        
+
     }
 }
 
