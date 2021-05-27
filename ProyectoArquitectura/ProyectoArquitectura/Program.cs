@@ -12,65 +12,55 @@ namespace ProyectoArquitectura
         static void Main(string[] args)
         {
             Buscar meta = new Buscar();
-
-            //string[] lines = File.ReadAllLines("Juegos.txt"); //meter todo el archivo en un arreglo good good
-            /*foreach (string line in lines) 
-            { 
-                meta.BuscarMetacritic(line);
-                meta.BuscarPrecio1(line);
-                meta.BuscarPrecio2(line);
-                meta.BuscarTiempo(line);
-            }*/
-
-
-
-            /*string[] lines = File.ReadAllLines("Juegos.txt");//meter todo el archivo en un arreglo good good
+            string[] lines = File.ReadAllLines("Juegos.txt"); //meter todo el archivo en un arreglo 
+            String Inicio = "<Html><Head><style>th{padding:9px;background-color:rgb(117, 163, 165);border:3px solid rgb(117,163,165)}td{border:3px solid rgb(117,163,165);padding:13px;background-color:rgb(235,241,241)}table{width:20%;height:100px;border-collapse:separate;border-spacing:2px 2px}body{background-color:rgb(253, 252, 252)}</style><title>Busqueda Juegos</title><h2 align='center'>Resultados Videojuegos</h2></Head><body>";
+            File.WriteAllText("PaginaWeb.html", Inicio);
             foreach (string line in lines) 
             {
-                meta.BuscarMetacritic(line);
-                meta.BuscarPrecio1(line);
-                meta.BuscarTiempo(line);
-                /*Parallel.Invoke(
+                String nombre = line;
+                Parallel.Invoke(
                 () =>
                 {
-                    meta.BuscarMetacritic(line);
+                    String nota = meta.BuscarMetacritic(line);
+                    LlenarHtml(nombre,nota);        
                 },
                 () =>
                 {
-                    meta.BuscarPrecio1(line);
+                    String precio1 = meta.BuscarPrecio1(line);
+                    String precio2 = meta.BuscarPrecio2(line);
+                    LlenarPrecios(precio1,precio2);              
                 },
                 () =>
                 {
-                    meta.BuscarTiempo(line);
+                    //String tiempo = meta.BuscarTiempo(line);
+                    //LlenarHtml2(tiempo);
                 }
                 );
-            }*/
-
-
-            /*Parallel.Invoke(
-            () =>
-            {
-                leerJuegos();
-            },
-            () =>
-            {
-                Console.WriteLine("Hola esto es una prueba");
-            },
-            () =>
-            {
-                Console.WriteLine("Hola la segunda prueba");
+                String cerrarTabla = "</table>";
+                File.AppendAllLines("PaginaWeb.html", new String[] { cerrarTabla });
             }
-            );*/
+            String Final = "</body></Html>";
+            File.AppendAllLines("PaginaWeb.html", new String[] { Final });
 
-            //Lo de la pagina web
-            //string html = "<html><head> <tittle> Resultados Juegos </tittle></head><body><table><tr><th> Nombre</th><td></td></tr><tr><th> Calificación</th><td></td></tr><tr><th> Precioen Steam</th><td></td></tr><tr><th> Precio en G2a</th><td></td></tr><tr><th> Tiempo para completar</th><td></td></tr></table></body></html>";
-
-            //File.WriteAllText("PaginaWeb.html", html);
-
-            //var proc = Process.Start(@"cmd.exe ", @"/c PaginaWeb.html");
-
+            var proc = Process.Start(@"cmd.exe ", @"/c PaginaWeb.html"); // Iniciar la página
         }
 
+        public static void LlenarHtml(String nom, String cali)
+        {
+            String relleno = "<table align='left'><tr><tr align='center'><th colspan='2'>" + nom + "</th></tr><tr align='center'><th>Calificación Metacritic</th><td>" + cali + "</td></tr>";
+            File.AppendAllLines("PaginaWeb.html", new String[] { relleno });
+        }
+
+        public static void LlenarPrecios(String pre1, String pre2)
+        {
+            String Relleno = "<tr align='center'><th>Precio en Steam</th><td>" + pre1 + "</td></tr><tr align='center'><th>Precio en HumbleBundle</th><td>" + pre2 + "</td></tr>";
+            File.AppendAllLines("PaginaWeb.html", new String[] { Relleno });
+        }
+        public static void LlenarHtml2(String temp)
+        {
+            String Relleno = "<tr align='center'><th>Duracion Historia Principal</th><td>" + temp + "</td></tr>";
+            File.AppendAllLines("PaginaWeb.html", new String[] { Relleno });
+        }
     }
 }
 
